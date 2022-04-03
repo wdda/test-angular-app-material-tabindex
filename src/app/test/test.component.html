@@ -1,0 +1,45 @@
+<mat-card class="shipping-card">
+  <mat-card-header>
+    <mat-card-title>Test tab key</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="row">
+      <div class="col">
+        <mat-form-field class="full-width">
+          <input matInput placeholder="From">
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <mat-form-field class="full-width">
+          <input matInput placeholder="To">
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <mat-form-field class="full-width">
+          <mat-select placeholder="When">
+            <mat-option *ngFor="let state of states" [value]="state.abbreviation">
+              {{ state.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row center margin_top">
+      <button tabindex="-1">skip the button</button>
+    </div>
+    <div class="row margin_top">
+      <div class="col center">
+        <button class="button_focus">test 1</button>
+      </div>
+      <div class="col center">
+        <button class="button_focus">test 2</button>
+      </div>
+      <div class="col center">
+        <button class="button_focus">test 3</button>
+      </div>
+      <div class="col center">
+        <button class="button_focus">test 4</button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

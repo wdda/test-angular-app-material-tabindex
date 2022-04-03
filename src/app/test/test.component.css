@@ -1,0 +1,40 @@
+.full-width {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.col:last-child {
+  margin-right: 0;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin_top {
+  margin-top: 50px;
+}
+
+button {
+  background: #ffffff;
+  color: #000000;
+  padding: 20px;
+  font-size: 20px;
+
+}
+
+.button_focus:focus {
+  background: #000000;
+  color: #ffffff;
+}
