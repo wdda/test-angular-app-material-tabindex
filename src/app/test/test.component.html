@@ -16,7 +16,7 @@
       </div>
       <div class="col">
         <mat-form-field class="full-width">
-          <mat-select placeholder="When">
+          <mat-select placeholder="When" #whenSelect (focus)="whenSelect.open()">
             <mat-option *ngFor="let state of states" [value]="state.abbreviation">
               {{ state.name }}
             </mat-option>
